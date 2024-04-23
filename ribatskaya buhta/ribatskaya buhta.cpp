@@ -6,11 +6,10 @@ using namespace std;
 
 class Udochka
 {
-private:
+public:
 	string name;
 	int price;
 	int value;
-public:
 	Udochka()
 	{
 		name = "тест удочка";
@@ -63,7 +62,8 @@ public:
 		lvl = _lvl;
 		balance = _balance;
 	}																					
-};		
+};	
+
 class StartGame
 {
 public:
@@ -84,9 +84,9 @@ public:
 		ribas[11] = Riba("здоровенный язь", (rand() % 2500 + 2000), (rand() % 2500 + 2000), 50, "legendary");
 	}
 
-	static void zapolnitMagaz()
+	static void createUdochki()
 	{
-		Udochka udochki[6];
+		static Udochka udochki[6];
 		udochki[0] = Udochka("ловитель параши всякой", 150, 9);
 		udochki[1] = Udochka("перемотанная изолентой крепкая удочка", 250, 15);
 		udochki[2] = Udochka("удочка смазанная свинным жиром", 250, 22);
@@ -108,28 +108,27 @@ public:
 		cout << "добро пожаловать, " + _name + "!, ваш баланс: " + to_string(_balance) + ", ваш уровень: " + to_string(_lvl) << endl;
 	}
 };
+
 																						
 																						
 int main()																		
 {																				
 																					
 	setlocale(LC_ALL, "RU");															
-	cout << "рыбацкая бухта" << endl;						
+	cout << "рыбацкая бухта" << endl;	
 	StartGame::createRibki();
-	StartGame::zapolnitMagaz();
+	StartGame::createUdochki();
 	StartGame::createRibak();
-}																							
+}			
+
+//короче это все полная хуета, я завтра переделаю эту залупу
 
 
 
 
 
 
-class Magaz
-{
-private:
-	
-};
+
 
 //для рыбалки:
 /*
