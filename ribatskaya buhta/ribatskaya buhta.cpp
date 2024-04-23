@@ -67,7 +67,7 @@ public:
 class StartGame
 {
 public:
-	void createRibki()
+	static void createRibki()
 	{
 		Riba ribas[12];
 		ribas[0] = Riba("карась", (rand() % 500 + 100), (rand() % 500 + 10), 0, "common");
@@ -84,7 +84,7 @@ public:
 		ribas[11] = Riba("здоровенный язь", (rand() % 2500 + 2000), (rand() % 2500 + 2000), 50, "legendary");
 	}
 
-	void zapolnitMagaz()
+	static void zapolnitMagaz()
 	{
 		Udochka udochki[6];
 		udochki[0] = Udochka("ловитель параши всякой", 150, 9);
@@ -95,7 +95,7 @@ public:
 		udochki[5] = Udochka("самая крутая удочка", 1000, 56);
 	}
 
-	void createRibak()
+	static void createRibak()
 	{
 		string _name;
 		int _lvl = 1;
@@ -115,10 +115,9 @@ int main()
 																					
 	setlocale(LC_ALL, "RU");															
 	cout << "рыбацкая бухта" << endl;						
-	StartGame newgame;
-	newgame.createRibki();
-	newgame.zapolnitMagaz();
-	newgame.createRibak();																	
+	StartGame::createRibki();
+	StartGame::zapolnitMagaz();
+	StartGame::createRibak();
 }																							
 
 
