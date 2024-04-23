@@ -119,7 +119,7 @@ void createRibak()
 	cout << "введите имя рыбака: ";
 	cin >> _name;
 
-	Ribak ribak(_name, _lvl, _balance);
+	Ribak ribak(_name, _lvl, _balance);//misha svin
 	cout << "добро пожаловать, " + _name + "!, ваш баланс: " + to_string(_balance) + ", ваш уровень: " + to_string(_lvl) << endl;
 }
 
