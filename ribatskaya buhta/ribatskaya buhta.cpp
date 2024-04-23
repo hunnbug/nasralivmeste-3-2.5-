@@ -4,7 +4,6 @@
 #include <map>
 using namespace std;
 
-
 class Udochka
 {
 private:
@@ -32,58 +31,45 @@ public:
 	string name;
 	int weight;
 	int dlina;
-	int valueForPoymat; // <- вот это(valueForPoymat) - нужная сила удочки --------------
-	string rare;//																		|
-	Riba()//																			|
-	{//																					|
-		name = "Адун";//																|
-		weight = 14;//																	|
-		dlina = 8;//																	|
-		valueForPoymat = 8;//															|
-		rare = "pashalko";//															|
-	}//																					|
-	Riba(string _name, int _weight, int _dlina, int _valueForPoymat, string _rare)//	|
-	{//																					|
-		name = _name;//																	|
-		weight = _weight;//																|
-		dlina = _dlina;//																|
-		valueForPoymat = _valueForPoymat;//												|
-		rare = _rare;//																	|
-	}//																					|
-};//																					|
-class Ribak//																			|
-{//																						|
-private://																				|
-	string name;//																		|
-	int lvl;//																			|
-	int balance;//																		|
-public://																				|
-	Ribak(string _name, int _lvl, int _balance)//										|
-	{//																					|
-		name = _name;//																	|
-		lvl = _lvl;//																	|
-		balance = _balance;//															|
-	}//																					|
-};//																					|
-//																						|
-//																						|
-int main()//																			|
-{//																						|
-																					//	|
-	setlocale(LC_ALL, "RU");//															|
-	cout << "рыбацкая бухта" << endl;//													|
-	StartGame::createRibki();//								
-	StartGame::zapolnitMagaz();
-	//																					|
-}//																						|
-//	
-// 
+	int valueForPoymat;
+	string rare;																		
+	Riba()																			
+	{																					
+		name = "Адун";																
+		weight = 14;																	
+		dlina = 8;																	
+		valueForPoymat = 8;															
+		rare = "pashalko";															
+	}																					
+	Riba(string _name, int _weight, int _dlina, int _valueForPoymat, string _rare)	
+	{																					
+		name = _name;																	
+		weight = _weight;																
+		dlina = _dlina;																
+		valueForPoymat = _valueForPoymat;												
+		rare = _rare;																	
+	}																					
+};																					
+class Ribak																			
+{																					
+private:																				
+	string name;																		
+	int lvl;																			
+	int balance;
+public:
+	Ribak(string _name, int _lvl, int _balance)
+	{
+		name = _name;
+		lvl = _lvl;
+		balance = _balance;
+	}																					
+};		
 class StartGame
 {
 public:
-	static void createRibki()//																	|
-	{//																						|
-		Riba ribas[12];//													 ↓--------------
+	void createRibki()
+	{
+		Riba ribas[12];
 		ribas[0] = Riba("карась", (rand() % 500 + 100), (rand() % 500 + 10), 0, "common");
 		ribas[1] = Riba("сом", (rand() % 500 + 100), (rand() % 500 + 10), 0, "common");
 		ribas[2] = Riba("язь", (rand() % 500 + 100), (rand() % 500 + 10), 10, "uncommon");
@@ -98,30 +84,46 @@ public:
 		ribas[11] = Riba("здоровенный язь", (rand() % 2500 + 2000), (rand() % 2500 + 2000), 50, "legendary");
 	}
 
-	static void zapolnitMagaz()
+	void zapolnitMagaz()
 	{
-		Udochka udochki[5];
+		Udochka udochki[6];
 		udochki[0] = Udochka("ловитель параши всякой", 150, 9);
 		udochki[1] = Udochka("перемотанная изолентой крепкая удочка", 250, 15);
-		udochki[2] = Udochka("дефолт удочка", 250, 15);
-		udochki[3] = Udochka("дефолт удочка", 250, 15);
-		udochki[4] = Udochka("дефолт удочка", 250, 15);
-		udochki[5] = Udochka("дефолт удочка", 250, 15);
+		udochki[2] = Udochka("удочка смазанная свинным жиром", 250, 22);
+		udochki[3] = Udochka("секретная удочка покрашенная розовойц краской", 450, 32);
+		udochki[4] = Udochka("цельнометаллическая удочка", 600, 41);
+		udochki[5] = Udochka("самая крутая удочка", 1000, 56);
+	}
+
+	void createRibak()
+	{
+		string _name;
+		int _lvl = 1;
+		int _balance = 100;
+
+		cout << "введите имя рыбака: ";
+		cin >> _name;
+
+		Ribak ribak(_name, _lvl, _balance);
+		cout << "добро пожаловать, " + _name + "!, ваш баланс: " + to_string(_balance) + ", ваш уровень: " + to_string(_lvl) << endl;
 	}
 };
+																						
+																						
+int main()																		
+{																				
+																					
+	setlocale(LC_ALL, "RU");															
+	cout << "рыбацкая бухта" << endl;						
+	StartGame newgame;
+	newgame.createRibki();
+	newgame.zapolnitMagaz();
+	newgame.createRibak();																	
+}																							
 
-void createRibak()
-{
-	string _name;
-	int _lvl = 1;
-	int _balance = 100;
 
-	cout << "введите имя рыбака: ";
-	cin >> _name;
 
-	Ribak ribak(_name, _lvl, _balance);
-	cout << "добро пожаловать, " + _name + "!, ваш баланс: " + to_string(_balance) + ", ваш уровень: " + to_string(_lvl) << endl;
-}
+
 
 
 class Magaz
@@ -133,7 +135,7 @@ private:
 //для рыбалки:
 /*
 * для вылова рыбы value удочки должна быть больше valueForPoymat рыбы
-* за каждые 100гр рыбы дается 30 * длину рыбы голды
+* за каждые 100гр рыбы дается 30 голды
 */
 
 //для меню:
