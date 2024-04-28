@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\CODING\\mocha\\c\u002B\u002B\\ribatskaya buhta\\",
+  "WorkspaceRootPath": "D:\\CODING\\mocha\\c\u002B\u002B\\ribatskaya buhta\\nasralivmeste-3-2.5-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88250A7B-20D8-48E1-9DB9-D30C47B3A857}|ribatskaya buhta\\ribatskaya buhta.vcxproj|D:\\CODING\\mocha\\c\u002B\u002B\\ribatskaya buhta\\ribatskaya buhta\\ribatskaya buhta.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{88250A7B-20D8-48E1-9DB9-D30C47B3A857}|ribatskaya buhta\\ribatskaya buhta.vcxproj|D:\\CODING\\mocha\\c\u002B\u002B\\ribatskaya buhta\\nasralivmeste-3-2.5-\\ribatskaya buhta\\ribatskaya buhta.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{88250A7B-20D8-48E1-9DB9-D30C47B3A857}|ribatskaya buhta\\ribatskaya buhta.vcxproj|solutionrelative:ribatskaya buhta\\ribatskaya buhta.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ribatskaya buhta.cpp",
-              "DocumentMoniker": "D:\\CODING\\mocha\\c\u002B\u002B\\ribatskaya buhta\\ribatskaya buhta\\ribatskaya buhta.cpp",
+              "DocumentMoniker": "D:\\CODING\\mocha\\c\u002B\u002B\\ribatskaya buhta\\nasralivmeste-3-2.5-\\ribatskaya buhta\\ribatskaya buhta.cpp",
               "RelativeDocumentMoniker": "ribatskaya buhta\\ribatskaya buhta.cpp",
-              "ToolTip": "D:\\CODING\\mocha\\c\u002B\u002B\\ribatskaya buhta\\ribatskaya buhta\\ribatskaya buhta.cpp",
+              "ToolTip": "D:\\CODING\\mocha\\c\u002B\u002B\\ribatskaya buhta\\nasralivmeste-3-2.5-\\ribatskaya buhta\\ribatskaya buhta.cpp",
               "RelativeToolTip": "ribatskaya buhta\\ribatskaya buhta.cpp",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAAAHsAAAA8AAAA",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAAAIQAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-23T17:29:41.897Z",
               "EditorCaption": ""
