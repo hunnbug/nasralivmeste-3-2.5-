@@ -57,10 +57,10 @@ class Game
 {
 public:
 	static constexpr size_t UDOCHKI_COUNT = 6;
-	static constexpr size_t RIBAS_COUNT = 12;
-
 	static Udochka udochki[UDOCHKI_COUNT];
-	static Riba ribas[RIBAS_COUNT];
+	static constexpr size_t RIBAS_COUNT = 12;
+	static Riba	ribas[RIBAS_COUNT];
+
 
 	static void init()
 	{
@@ -74,7 +74,7 @@ public:
 		ribas[0]		= Riba("карась", (rand() % 500 + 100), (rand() % 500 + 10), 0, "common");
 		ribas[1]		= Riba("сом", (rand() % 500 + 100), (rand() % 500 + 10), 0, "common");
 		ribas[2]		= Riba("€зь", (rand() % 500 + 100), (rand() % 500 + 10), 10, "uncommon");
-		ribas[3]		= Riba("карась", (rand() % 500 + 100)/*rand() % (макс число - мин число + 1) + (мин число)*/, (rand() % 500 + 10), 10, "uncommon");
+		ribas[3]		= Riba("кит", (rand() % 500 + 100)/*rand() % (макс число - мин число + 1) + (мин число)*/, (rand() % 500 + 10), 10, "uncommon");
 		ribas[4]		= Riba("жмур", (rand() % 500 + 100), (rand() % 500 + 10), 20, "uncommon");
 		ribas[5]		= Riba("рыба овальный", (rand() % 500 + 100), (rand() % 500 + 10), 20, "rare");
 		ribas[6]		= Riba("рыба фьлодј", (rand() % 500 + 100), (rand() % 500 + 10), 20, "rare");

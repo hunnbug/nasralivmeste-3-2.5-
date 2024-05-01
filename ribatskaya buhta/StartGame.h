@@ -38,8 +38,6 @@ public:
 		balance = 100;
 		Ribak ribak(name, lvl, balance, Game::udochki[0]);
 		system("cls");
-
-
 	}
 	string getName() const {
 		return name;
