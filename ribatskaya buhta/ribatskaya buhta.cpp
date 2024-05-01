@@ -53,7 +53,7 @@ static void menu(StartGame game) {
 		case 2:
 
 		case 3:
-
+			Rubalka::rybalka;
 		case 4:
 
 		case 5:
@@ -84,13 +84,13 @@ public:
 
 
 	static bool raschet(Riba riba) {
-		if (udochka.value <= riba.valueForPoymat) {
-			cout << "Сорвалась";
-			return false;
-		}
-		else {
+		if (udochka.value >= riba.valueForPoymat) {
 			cout << "Рыба успешно поймана";
 			return true;
+		}
+		else {
+			cout << "Сорвалась";
+			return false;
 		}
 	}
 
@@ -101,9 +101,9 @@ public:
 		cout << "1  2  3\n4  5  6\n7  8  9" << endl;
 		int choice; cin >> choice;
 		unsigned int randomn_riba;
-		for (int i = 0; i <= 3; i++)
+		for (int i = 0; i < 3; i++)
 		{
-			for (int j = 0; j <= 3; j++)
+			for (int j = 0; j < 3; j++)
 			{
 				randomn_riba = rand() % 12;
 				pole[i][j] = spisokRib[randomn_riba];
@@ -113,38 +113,96 @@ public:
 		switch (choice)
 		{
 		case 1:
-			if ()
+				//короче сюда передаешь поле, которое соответствует цифре(например здесь первое поле - 0 строка 1 столбец, ну и так далее)
+			if (raschet(pole[0][0])) {
 				cout << "попал";
-			raschet(pole[0][1]); //короче сюда передаешь поле, которое соответствует цифре(например здесь первое поле - 0 строка 1 столбец, ну и так далее)
-			break;
-			else
+					break;
+			}
+			else {
 				cout << "мимо";
-			break;
-			if (raschet)
-				cout << "Поздравляю, вы поймали рыбу";
-			break;
+					break;
+			}
 		case 2:
-			if ()
+			if (raschet(pole[0][1])) {
 				cout << "попал";
-			else
-				cout << "мимо";
-			raschet;
-			break;
-		case 3:
-			if () {
-				cout << "попал";
-				raschet;
 				break;
 			}
-			else
+			else{
 				cout << "мимо";
+				break;
+			}
+		case 3:
+			if (raschet(pole[0][2])) {
+				cout << "попал";
+					break;
+			}
+			else {
+				cout << "мимо";
+					break;
+			}
+		case 4:
+			if (raschet(pole[1][0])) {
+				cout << "попал";
+				break;
+			}
+			else {
+				cout << "мимо";
+				break;
+			}
+		case 5:
+			if (raschet(pole[1][1])) {
+				cout << "попал";
+				break;
+			}
+			else {
+				cout << "мимо";
+				break;
+			}
+		case 6:
+			if (raschet(pole[1][2])) {
+				cout << "попал";
+				break;
+			}
+			else {
+				cout << "мимо";
+				break;
+			}
+		case 7:
+			if (raschet(pole[2][0])) {
+				cout << "попал";
+				break;
+			}
+			else {
+				cout << "мимо";
+				break;
+			}
 
+		case 8:
+			if (raschet(pole[2][1])) {
+				cout << "попал";
+				break;
+			}
+			else {
+				cout << "мимо";
+				break;
+			}
+		case 9:
+			if (raschet(pole[2][2])) {
+				cout << "попал";
+				break;
+			}
+			else {
+				cout << "мимо";
+				break;
+			}
 		default:
 			break;
 		}
 
 	}
 };
+
+
 
 int main()
 {
