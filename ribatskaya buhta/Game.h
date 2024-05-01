@@ -53,13 +53,31 @@ public:
 	}
 };
 
+class Ribak
+{
+private:
+	string name;
+	int lvl;
+	int balance;
+	Udochka udochka;
+public:
+	Ribak() : name(""), lvl(0), balance(0) {} // Конструктор по умолчанию
+
+	Ribak(string _name, int _lvl, int _balance, Udochka _udochka) : name(_name), lvl(_lvl), balance(_balance), udochka(_udochka) {}
+
+	string	getName()		{ return name; }
+	int		getLevel()		{ return lvl; }
+	int		getBalance()	{ return balance; }
+	Udochka getUdochka()	{ return udochka; }
+};
+
 class Game
 {
 public:
 	static constexpr size_t UDOCHKI_COUNT = 6;
 	static Udochka udochki[UDOCHKI_COUNT];
 	static constexpr size_t RIBAS_COUNT = 12;
-	static Riba	ribas[RIBAS_COUNT];
+	static Riba ribas[RIBAS_COUNT];
 
 
 	static void init()
@@ -85,4 +103,9 @@ public:
 		ribas[11]		= Riba("здоровенный язь", (rand() % 2500 + 2000), (rand() % 2500 + 2000), 50, "legendary");
 	}
 };
+
+Udochka Game::udochki[Game::UDOCHKI_COUNT];
+Riba Game::ribas[Game::RIBAS_COUNT];
+#define похуй break;
+#define перчики using namespace std;
 #endif

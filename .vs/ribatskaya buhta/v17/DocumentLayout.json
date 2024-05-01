@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{88250A7B-20D8-48E1-9DB9-D30C47B3A857}|ribatskaya buhta\\ribatskaya buhta.vcxproj|solutionrelative:ribatskaya buhta\\ribatskaya buhta.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88250A7B-20D8-48E1-9DB9-D30C47B3A857}|ribatskaya buhta\\ribatskaya buhta.vcxproj|D:\\CODING\\mocha\\c\u002B\u002B\\nasralivmeste-3-2.5-\\ribatskaya buhta\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{88250A7B-20D8-48E1-9DB9-D30C47B3A857}|ribatskaya buhta\\ribatskaya buhta.vcxproj|solutionrelative:ribatskaya buhta\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{88250A7B-20D8-48E1-9DB9-D30C47B3A857}|ribatskaya buhta\\ribatskaya buhta.vcxproj|D:\\CODING\\mocha\\c\u002B\u002B\\nasralivmeste-3-2.5-\\ribatskaya buhta\\Rubalka.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{88250A7B-20D8-48E1-9DB9-D30C47B3A857}|ribatskaya buhta\\ribatskaya buhta.vcxproj|solutionrelative:ribatskaya buhta\\Rubalka.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88250A7B-20D8-48E1-9DB9-D30C47B3A857}|ribatskaya buhta\\ribatskaya buhta.vcxproj|D:\\CODING\\mocha\\c\u002B\u002B\\nasralivmeste-3-2.5-\\ribatskaya buhta\\StartGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{88250A7B-20D8-48E1-9DB9-D30C47B3A857}|ribatskaya buhta\\ribatskaya buhta.vcxproj|solutionrelative:ribatskaya buhta\\StartGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{88250A7B-20D8-48E1-9DB9-D30C47B3A857}|ribatskaya buhta\\ribatskaya buhta.vcxproj|D:\\CODING\\mocha\\c\u002B\u002B\\nasralivmeste-3-2.5-\\ribatskaya buhta\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{88250A7B-20D8-48E1-9DB9-D30C47B3A857}|ribatskaya buhta\\ribatskaya buhta.vcxproj|solutionrelative:ribatskaya buhta\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,28 +26,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StartGame.h",
-              "DocumentMoniker": "D:\\CODING\\mocha\\c\u002B\u002B\\nasralivmeste-3-2.5-\\ribatskaya buhta\\StartGame.h",
-              "RelativeDocumentMoniker": "ribatskaya buhta\\StartGame.h",
-              "ToolTip": "D:\\CODING\\mocha\\c\u002B\u002B\\nasralivmeste-3-2.5-\\ribatskaya buhta\\StartGame.h",
-              "RelativeToolTip": "ribatskaya buhta\\StartGame.h",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACcAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-01T07:26:10.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Game.h",
-              "DocumentMoniker": "D:\\CODING\\mocha\\c\u002B\u002B\\nasralivmeste-3-2.5-\\ribatskaya buhta\\Game.h",
-              "RelativeDocumentMoniker": "ribatskaya buhta\\Game.h",
-              "ToolTip": "D:\\CODING\\mocha\\c\u002B\u002B\\nasralivmeste-3-2.5-\\ribatskaya buhta\\Game.h",
-              "RelativeToolTip": "ribatskaya buhta\\Game.h",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAFAAAAAdAAAA",
+              "Title": "Rubalka.h",
+              "DocumentMoniker": "D:\\CODING\\mocha\\c\u002B\u002B\\nasralivmeste-3-2.5-\\ribatskaya buhta\\Rubalka.h",
+              "RelativeDocumentMoniker": "ribatskaya buhta\\Rubalka.h",
+              "ToolTip": "D:\\CODING\\mocha\\c\u002B\u002B\\nasralivmeste-3-2.5-\\ribatskaya buhta\\Rubalka.h",
+              "RelativeToolTip": "ribatskaya buhta\\Rubalka.h",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAI0AAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-01T07:21:29.557Z",
+              "WhenOpened": "2024-05-01T12:39:48.161Z",
               "EditorCaption": ""
             },
             {
@@ -58,9 +45,43 @@
               "RelativeDocumentMoniker": "ribatskaya buhta\\ribatskaya buhta.cpp",
               "ToolTip": "D:\\CODING\\mocha\\c\u002B\u002B\\nasralivmeste-3-2.5-\\ribatskaya buhta\\ribatskaya buhta.cpp",
               "RelativeToolTip": "ribatskaya buhta\\ribatskaya buhta.cpp",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAG0AAAAEAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-23T17:29:41.897Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "05df8e4f-3439-4edf-8222-8ec78c8e7cea",
+        "Display": 1,
+        "X": -225,
+        "Y": 179,
+        "Width": 1718,
+        "Height": 734,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Game.h",
+              "DocumentMoniker": "D:\\CODING\\mocha\\c\u002B\u002B\\nasralivmeste-3-2.5-\\ribatskaya buhta\\Game.h",
+              "RelativeDocumentMoniker": "ribatskaya buhta\\Game.h",
+              "ToolTip": "D:\\CODING\\mocha\\c\u002B\u002B\\nasralivmeste-3-2.5-\\ribatskaya buhta\\Game.h",
+              "RelativeToolTip": "ribatskaya buhta\\Game.h",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-01T07:21:29.557Z",
               "EditorCaption": ""
             }
           ]
