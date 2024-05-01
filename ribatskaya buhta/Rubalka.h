@@ -1,9 +1,11 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <random>
 #include "Game.h"
 
 #ifndef RUBALKA_H
 #define RUBALKA_H
+
+
 class Rubalka
 {
 private:
@@ -24,21 +26,35 @@ public:
 
 	static bool raschet(Riba riba) {
 		if (udochka.value >= riba.valueForPoymat) {
-			cout << "Рыба успешно поймана";
+			cout << "РїРѕР№РјР°Р»";
 			return true;
 		}
 		else {
-			cout << "Сорвалась";
+			cout << "СЃРѕСЂРІР°Р»Р°СЃСЊ";
 			return false;
 		}
 	}
 
-	static void rybalka() {
+	static int podshetdeneg(string rarnost) {
+		if (rarnost == "common")
+			return 25;
+		if (rarnost == "uncommon")
+			return 50;
+		if (rarnost == "rare")
+			return 75;
+		if (rarnost == "epic")
+			return 100;
+		if (rarnost == "legendary")
+			return 125;
+
+	}
+
+	void rybalka(Ribak r) {
 		Riba pole[3][3];
 
-		cout << "Выберите 1 поле(от 1 до 9)";
+		cout << "РґР»СЏ РІС‹С…РѕРґР° РЅР°Р¶РјРёС‚Рµ 0" << endl;
+		cout << "РІС‹Р±РµСЂРёС‚Рµ РїРѕР»Рµ РѕС‚ 1 РґРѕ 9" << endl;
 		cout << "1  2  3\n4  5  6\n7  8  9" << endl;
-		int choice; cin >> choice;
 		unsigned int randomn_riba;
 		for (int i = 0; i < 3; i++)
 		{
@@ -48,96 +64,109 @@ public:
 				pole[i][j] = spisokRib[randomn_riba];
 			}
 		}
+		int choice; cin >> choice;
 
 		switch (choice)
 		{
 		case 1:
-			//короче сюда передаешь поле, которое соответствует цифре(например здесь первое поле - 0 строка 1 столбец, ну и так далее)
 			if (raschet(pole[0][0])) {
-				cout << "попал";
+				cout << "РїРѕР№РјР°Р»";
+				r.balance += podshetdeneg(pole[0][0].rare);
+				gavno << "РІР°С€ Р±Р°Р»Р°РЅСЃ: " << r.getBalance() << " РґРµРЅРµРі";
 				break;
 			}
 			else {
-				cout << "мимо";
+				cout << "СЃРѕСЂРІР°Р»Р°СЃСЊ";
 				break;
 			}
 		case 2:
 			if (raschet(pole[0][1])) {
-				cout << "попал";
+				cout << "РїРѕР№РјР°Р»";
+				r.balance += podshetdeneg(pole[0][1].rare);
+				gavno << "РІР°С€ Р±Р°Р»Р°РЅСЃ: " << r.getBalance() << " РґРµРЅРµРі";
 				break;
 			}
 			else {
-				cout << "мимо";
+				cout << "СЃРѕСЂРІР°Р»Р°СЃСЊ";
 				break;
 			}
 		case 3:
 			if (raschet(pole[0][2])) {
-				cout << "попал";
+				cout << "РїРѕР№РјР°Р»"; r.balance += podshetdeneg(pole[0][2].rare);
+				gavno << "РІР°С€ Р±Р°Р»Р°РЅСЃ: " << r.getBalance() << " РґРµРЅРµРі";
 				break;
 			}
 			else {
-				cout << "мимо";
+				cout << "СЃРѕСЂРІР°Р»Р°СЃСЊ";
 				break;
 			}
 		case 4:
 			if (raschet(pole[1][0])) {
-				cout << "попал";
+				cout << "РїРѕР№РјР°Р»"; r.balance += podshetdeneg(pole[1][0].rare);
+				gavno << "РІР°С€ Р±Р°Р»Р°РЅСЃ: " << r.getBalance() << " РґРµРЅРµРі";
 				break;
 			}
 			else {
-				cout << "мимо";
+				cout << "СЃРѕСЂРІР°Р»Р°СЃСЊ";
 				break;
 			}
 		case 5:
 			if (raschet(pole[1][1])) {
-				cout << "попал";
+				cout << "РїРѕР№РјР°Р»"; r.balance += podshetdeneg(pole[1][1].rare);
+				gavno << "РІР°С€ Р±Р°Р»Р°РЅСЃ: " << r.getBalance() << " РґРµРЅРµРі";
 				break;
 			}
 			else {
-				cout << "мимо";
+				cout << "СЃРѕСЂРІР°Р»Р°СЃСЊ";
 				break;
 			}
 		case 6:
 			if (raschet(pole[1][2])) {
-				cout << "попал";
+				cout << "РїРѕР№РјР°Р»"; r.balance += podshetdeneg(pole[1][2].rare);
+				gavno << "РІР°С€ Р±Р°Р»Р°РЅСЃ: " << r.getBalance() << " РґРµРЅРµРі";
 				break;
 			}
 			else {
-				cout << "мимо";
+				cout << "СЃРѕСЂРІР°Р»Р°СЃСЊ";
 				break;
 			}
 		case 7:
 			if (raschet(pole[2][0])) {
-				cout << "попал";
-				break;
+				cout << "РїРѕР№РјР°Р»"; r.balance += podshetdeneg(pole[2][0].rare);
+				gavno << "РІР°С€ Р±Р°Р»Р°РЅСЃ: " << r.getBalance() << " РґРµРЅРµРі";
+				РїРѕС…СѓР№;
 			}
 			else {
-				cout << "мимо";
+				cout << "СЃРѕСЂРІР°Р»Р°СЃСЊ";
 				break;
 			}
 
 		case 8:
 			if (raschet(pole[2][1])) {
-				cout << "попал";
+				cout << "РїРѕР№РјР°Р»"; r.balance += podshetdeneg(pole[2][1].rare);
+				gavno << "РІР°С€ Р±Р°Р»Р°РЅСЃ: " << r.getBalance() << " РґРµРЅРµРі";
 				break;
 			}
 			else {
-				cout << "мимо";
+				cout << "СЃРѕСЂРІР°Р»Р°СЃСЊ";
 				break;
 			}
 		case 9:
 			if (raschet(pole[2][2])) {
-				cout << "попал";
+				cout << "РїРѕР№РјР°Р»"; r.balance += podshetdeneg(pole[2][2].rare);
+				gavno << "РІР°С€ Р±Р°Р»Р°РЅСЃ: " << r.getBalance() << " РґРµРЅРµРі";
 				break;
 			}
 			else {
-				cout << "мимо";
+				cout << "СЃРѕСЂРІР°Р»Р°СЃСЊ";
 				break;
 			}
-		default:
+		case 0:
 			break;
 		}
-
+		return;
 	}
 };
+Riba Rubalka::spisokRib[Game::RIBAS_COUNT];
+Udochka Rubalka::udochka;
 #endif

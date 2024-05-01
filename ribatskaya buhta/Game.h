@@ -58,9 +58,9 @@ class Ribak
 private:
 	string name;
 	int lvl;
+public:
 	int balance;
 	Udochka udochka;
-public:
 	Ribak() : name(""), lvl(0), balance(0) {} // Конструктор по умолчанию
 
 	Ribak(string _name, int _lvl, int _balance, Udochka _udochka) : name(_name), lvl(_lvl), balance(_balance), udochka(_udochka) {}
@@ -108,4 +108,5 @@ Udochka Game::udochki[Game::UDOCHKI_COUNT];
 Riba Game::ribas[Game::RIBAS_COUNT];
 #define похуй break;
 #define перчики using namespace std;
+#define gavno cout
 #endif

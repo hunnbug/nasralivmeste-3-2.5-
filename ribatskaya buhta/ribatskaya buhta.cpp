@@ -3,35 +3,23 @@
 #include <random>
 #include "Game.h"
 #include "Rubalka.h"
+#include "Magaz.h"
 
 
 перчики
 
-class Magaz
-{
-public:
-	void ShowMagaz()
-	{
-		cout << "магаз:" << endl;
-		for (int i = 0; i < Game::UDOCHKI_COUNT; i++)
-		{
-			cout << "имя удочки: " + Game::udochki[i].name << endl;
-		}
-	}
-};
-static void menu(Ribak ribak) {
+static void menu(Ribak ribak, Rubalka rubalka) {
 	int choose;
 	system("cls");
 	cout << "|-------------------------------------------------------------------------------------------------|" << endl;
 	cout << "|Вы приходите в маленький рыбацкий городок, тут довольно много народу для обычного дня.           |" << endl;
 	cout << "|Люди на рынке суетятся и торговля идёт довольно оживлённо.                                       |" << endl;
 	cout << "|-------------------------------------------------------------------------------------------------|" << endl;
-	cout << "|Куда отправитесь?"																				  << endl;
-	cout << "|	1. Узнать характеристики"																		  << endl;
-	cout << "|	2. Пойти в магазин"																				  << endl;
-	cout << "|	3. Поррррррррррррррррррррыбачить?"																  << endl;
-	cout << "|	?. Прокачка статов"																				  << endl;
-	cout << "|	5. Выход"																						  << endl;
+	cout << "|Куда отправитесь?" << endl;
+	cout << "|	1. Узнать характеристики" << endl;
+	cout << "|	2. Пойти в магазин" << endl;
+	cout << "|	3. Поррррррррррррррррррррыбачить?" << endl;
+	cout << "|	4. Выход" << endl;
 	cout << "|-------------------------------------------------------------------------------------------------|" << endl;
 
 
@@ -49,16 +37,18 @@ static void menu(Ribak ribak) {
 			cout << "Для выхода введите 0" << endl;
 			cin >> choose;
 			if (choose == 0) {
-				menu(ribak);
+				menu(ribak, rubalka);
 			}
 		case 2:
-
+			Magaz magaz;
+			magaz.ShowMagaz(ribak);
+			break;
 		case 3:
-
+			rubalka.rybalka(ribak);
+			break;
 		case 4:
-
-		case 5:
-
+			return;
+			break;
 		default:
 			похуй
 		}
@@ -88,6 +78,6 @@ int main()
 	Ribak ribak(trash, 1, 100, Game::udochki[0]);
 	Rubalka rubalka(ribak.getUdochka(), Game::ribas);
 	system("cls");
-	menu(ribak);
+	menu(ribak, rubalka);
 }
 

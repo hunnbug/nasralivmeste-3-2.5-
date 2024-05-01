@@ -1,2 +1,3 @@
 ﻿  ribatskaya buhta.cpp
+D:\CODING\mocha\c++\nasralivmeste-3-2.5-\ribatskaya buhta\Rubalka.h(50,1): warning C4715: Rubalka::podshetdeneg: значение возвращается не при всех путях выполнения
   ribatskaya buhta.vcxproj -> D:\CODING\mocha\c++\nasralivmeste-3-2.5-\x64\Debug\ribatskaya buhta.exe
