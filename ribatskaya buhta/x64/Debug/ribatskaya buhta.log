@@ -1,2 +1,2 @@
 ﻿  ribatskaya buhta.cpp
-  ribatskaya buhta.vcxproj -> D:\CODING\mocha\c++\ribatskaya buhta\nasralivmeste-3-2.5-\x64\Debug\ribatskaya buhta.exe
+D:\Coding\mocha\C++\nasralivmeste-3-2.5-\ribatskaya buhta\ribatskaya buhta.cpp(4,10): error C1083: Не удается открыть файл включение: Game.h: No such file or directory,
